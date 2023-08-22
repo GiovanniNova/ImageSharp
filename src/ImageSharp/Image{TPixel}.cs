@@ -422,10 +422,10 @@ public sealed class Image<TPixel> : Image
 
         Size rootSize = rootFrame.Size();
 
-        if (frames.Any(f => f.Size() != rootSize))
+        /*if (frames.Any(f => f.Size() != rootSize))
         {
             throw new ArgumentException("The provided frames must be of the same size.", nameof(frames));
-        }
+        }*/
 
         return rootSize;
     }

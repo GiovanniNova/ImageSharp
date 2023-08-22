@@ -193,13 +193,13 @@ internal class TiffDecoderCore : IImageDecoderInternals
             // TODO: Tiff frames can have different sizes.
             ImageFrame<TPixel> root = frames[0];
             this.Dimensions = root.Size();
-            foreach (ImageFrame<TPixel> frame in frames)
+            /*foreach (ImageFrame<TPixel> frame in frames)
             {
                 if (frame.Size() != root.Size())
                 {
                     TiffThrowHelper.ThrowNotSupported("Images with different sizes are not supported");
                 }
-            }
+            }*/
 
             return new Image<TPixel>(this.configuration, metadata, frames);
         }

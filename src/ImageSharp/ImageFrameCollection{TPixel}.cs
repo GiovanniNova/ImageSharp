@@ -388,13 +388,13 @@ public sealed class ImageFrameCollection<TPixel> : ImageFrameCollection, IEnumer
     {
         Guard.NotNull(frame, nameof(frame));
 
-        if (this.Count != 0)
+        /*if (this.Count != 0)
         {
             if (this.RootFrame.Width != frame.Width || this.RootFrame.Height != frame.Height)
             {
                 throw new ArgumentException("Frame must have the same dimensions as the image.", nameof(frame));
             }
-        }
+        }*/
     }
 
     /// <inheritdoc/>
