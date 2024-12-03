@@ -388,6 +388,8 @@ public sealed class ImageFrameCollection<TPixel> : ImageFrameCollection, IEnumer
     {
         Guard.NotNull(frame, nameof(frame));
 
+        int dummy = this.Count;
+
         /*if (this.Count != 0)
         {
             if (this.RootFrame.Width != frame.Width || this.RootFrame.Height != frame.Height)
